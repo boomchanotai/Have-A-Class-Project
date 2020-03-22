@@ -1,0 +1,240 @@
+body{
+    background: rgba(119,40,219,1);
+    background: -moz-linear-gradient(-45deg, rgba(119,40,219,1) 0%, rgba(194,70,204,1) 83%, rgba(194,70,204,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(119,40,219,1)), color-stop(83%, rgba(194,70,204,1)), color-stop(100%, rgba(194,70,204,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(119,40,219,1) 0%, rgba(194,70,204,1) 83%, rgba(194,70,204,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(119,40,219,1) 0%, rgba(194,70,204,1) 83%, rgba(194,70,204,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(119,40,219,1) 0%, rgba(194,70,204,1) 83%, rgba(194,70,204,1) 100%);
+    background: linear-gradient(135deg, rgba(119,40,219,1) 0%, rgba(194,70,204,1) 83%, rgba(194,70,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7728db', endColorstr='#c246cc', GradientType=1 );
+}
+
+
+.simp-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.add-container{
+    border-radius: 20px;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.backend-body{
+    background-color: #ffffff;
+    padding: 50px;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 70vh;
+    font-size: 16px;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 1;
+}
+
+.dash{
+    padding: 30px;
+    cursor: pointer;
+}
+
+.dash p{
+    font-size: 24px;
+}
+
+.backend-post{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #fce03e;
+}
+
+.backend-user{
+    background-color: #b1c4c8;
+}
+
+.backend-ticket{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #f98284;
+}
+
+.addboard{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.add{
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.add p{
+    font-size: 18px;
+}
+
+.add-subject{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #304352;
+    color: white;
+}
+
+.add-tickettype{
+    background-color: #faf2db;
+}
+
+.add-province{
+    background-color: #304352;
+    color: white;
+}
+
+.add-teachingtype{
+    background-color: #faf2db;
+}
+
+.add-prefix{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #304352;
+    color: white;
+}
+
+.add-subject:hover{
+    background-color: #faf2db;
+    color: #000000;
+}
+
+.add-tickettype:hover{
+    background-color: #304352;
+    color: white;
+}
+
+.add-province:hover{
+    background-color: #faf2db;
+    color: #000000;
+}
+
+.add-teachingtype:hover{
+    background-color: #304352;
+    color: white;
+}
+
+.add-prefix:hover{
+    background-color: #faf2db;
+    color: #000000;
+}
+
+.postlist{
+    margin-top: 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.postlist td{
+    padding: 5px;
+}
+
+.postlist tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#getPost{
+    display: none;
+}
+
+#getUser{
+    display: none;
+}
+
+#getTicket{
+    display: none;
+}
+
+#subjectlist{
+    display: none;
+}
+
+#ticketlist{
+    display: none;
+}
+
+#provincelist{
+    display: none;
+}
+
+#teachingtypelist{
+    display: none;
+}
+
+#prefixlist{
+    display: none;
+}
+
+#edit-subject-container{
+    display: none;
+}
+
+#edit-tickettype-container{
+    display: none;
+}
+
+#admin-changepwd{
+    display: none;
+}
+
+#ticketreply{
+    text-align: center;
+    display: none;
+}
+
+#ticketreply-ans{
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    width: 60%;
+}
+
+@media screen and (max-width: 640px){
+    .backend-body{
+        padding: 20px;
+        font-size: 16px;
+    }
+    .dash{
+        padding: 10px;
+        text-align: center;
+    }
+    .dash h1{
+        font-size: 18px;
+    }
+    .dash p{
+        font-size: 16px;
+    }
+    .addboard{
+        margin: 10px;
+        display: inline;
+    }
+    .add p{
+        font-size: 14px;
+    }
+    .add{
+        border-radius: 10px;
+    }
+}
